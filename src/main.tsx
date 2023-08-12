@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// componentes
-import Home from './pages/Home'
+
 //estilização global
 import "./index.css";
+
+// componentes
+import Home from './pages/Home'
+import ListaDevs from './pages/ListaDevs';
 import ListaServicos from './pages/ListaServicos'
 import Footer from './components/Footer';
 import Header from './components/Header'
@@ -19,7 +22,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes> {/*Indica uma lista de rotas*/}
         <Route path='/' element={<Home />} />
         <Route path= 'lista/servicos' element= {<ListaServicos />} />
+        <Route path= 'lista/devs' element= {<ListaDevs/>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>,
 )
