@@ -21,10 +21,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Header />
       <Routes> {/*Indica uma lista de rotas*/}
         <Route path='/' element={<Home />} />
-        <Route path= 'lista/servicos' element= {<ListaServicos />} />
-        <Route path= 'lista/devs' element= {<ListaDevs/>} />
+        <Route path= '/lista/servicos' element= {<ListaServicos />} />
+        <Route path= '/lista/devs' element= {<ListaDevs/>} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   </React.StrictMode>,
 )
